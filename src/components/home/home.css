@@ -1,0 +1,14 @@
+.art{
+    width: 100%;
+    position: relative;
+}
+
+.tree{
+    width: 100%;
+}
+
+.cats{
+    top: 12%;
+    left: 22%;
+    position: absolute;
+}

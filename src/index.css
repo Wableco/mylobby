@@ -1,3 +1,21 @@
+::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  background-color: blueviolet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scrollbar-width: none; /* Esconde a barra no Firefox */
+}
+
 body{
   margin: 0;
+  overflow: visible;
+  overflow: -moz-scrollbars-none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer e Edge */
+}
+
+#root{
+  width: 100%;
+  height: auto;
 }

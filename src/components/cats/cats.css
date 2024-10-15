@@ -1,0 +1,41 @@
+.cats{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.salem {
+    display: block;
+    position: relative;
+}
+
+.salem > img {
+    width: 25%;
+}
+
+.salem > svg {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    top: 60%;
+    left: -12%;
+}
+
+.buba{
+    top: 3%;
+    left: -73%;
+    display: block;
+    position: relative;
+}
+
+.buba > img {
+    width: 23%;
+}
+
+.buba > svg{
+    position: absolute;
+    height: auto;
+    width: 40%;
+    top: 60%;
+    left: -8%;
+}

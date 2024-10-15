@@ -1,0 +1,68 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    width: 100vw;
+}
+
+ul> li{
+    list-style: none;
+}
+
+.NavBar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: aliceblue;
+    box-shadow: 0 0 0.5rem black
+}
+
+/* Classe para aplicar a animação */
+.animate {
+    animation: anime 1s ease-in-out forwards;  /* Animação para rodar de 0 a 360 graus */
+  }
+  
+  /* Classe para aplicar a animação reversa */
+ .reverse {
+    animation: anime 1s ease-in-out reverse forwards;  /* Animação inversa (360 a 0 graus) */
+  }
+
+.NavBar > img {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Logocats{
+    rotate: 180deg
+}
+
+@keyframes anime {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg / 10;
+    }
+
+    100%{
+        rotate: 180deg;
+    }
+}
+
+@media (max-width: 768px){
+    ul.visible{
+        display: flex
+    }
+    ul.hidden{
+        background-color: transparent;
+        z-index: 2;
+    }
+}
+
+label{
+    padding: 1rem;
+}

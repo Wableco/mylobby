@@ -1,14 +1,31 @@
-.art{
-    width: 100%;
-    position: relative;
+.art {
+  background-color: rgb(2, 3, 98);
+  background-image: url('/public/Frame.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
 }
 
-.tree{
-    width: 100%;
+.tree {
+  width: 50vw;
+  height: auto;
 }
 
-.cats{
-    top: 12%;
-    left: 22%;
-    position: absolute;
+.content {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  top: 55vh;
+
+}
+
+.text {
+  background-color: white;
+  width: 70vw;
+  padding: 50px 10px 50px 10px;
+  border-radius: 1rem;
 }

@@ -69,17 +69,19 @@ const CatsComponent = () => {
 
     return (
         <div className="cats">
-            <div className="salem">
-                <img src={salem} alt="Salem.png" width='110'></img>
-                <svg id="raboSalem" width="200" height="328" viewBox="0 0 358 328" fill="none" >
-                    <path d={coorSalem} id="rabomeugatoSalem" stroke="black" strokeWidth="25" strokeLinecap="round" />
-                </svg>
-            </div>
-            <div className="buba">
-                <img src={bubba} alt="buba.png" width="110" />
-                <svg id="raboBubba" width="200" height="328" viewBox="0 0 358 328" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d={coorBubba} id="rabomeugatoBubba" stroke="rgb(219,219,219)" strokeWidth="30" strokeLinecap="round" />
-                </svg>
+            <div className="wrapper">
+                <div className="salem">
+                    <img src={salem} alt="Salem.png" width='110'></img>
+                    <svg className="raboSalem" width="200" height="328" viewBox="0 0 358 328" fill="none" >
+                        <path d={coorSalem} stroke="black" strokeWidth="25" strokeLinecap="round" />
+                    </svg>
+                </div>
+                <div className="buba">
+                    <img src={bubba} alt="buba.png" width="110" />
+                    <svg className="raboBuba" width="200" height="328" viewBox="0 0 358 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d={coorBubba} stroke="rgb(219,219,219)" strokeWidth="30" strokeLinecap="round" />
+                    </svg>
+                </div>
             </div>
         </div>
     )

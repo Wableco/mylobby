@@ -3,9 +3,11 @@
 }
 
 html{
-  background-color: blueviolet;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
   scrollbar-width: none; /* Esconde a barra no Firefox */
+  max-width: 100vw;
+  
 }
 
 body{
@@ -13,9 +15,10 @@ body{
   overflow: visible;
   overflow: -moz-scrollbars-none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer e Edge */
+  width: 100vw;
 }
 
 #root{
-  width: 100%;
+  width: 100vw;
   height: auto;
 }

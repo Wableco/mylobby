@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './navbar.css'
 import logo from '../../../public/Botão Home.png'
 import { useState } from 'react'
@@ -12,6 +12,25 @@ const NavbarComponent = () => {
     setAnimating(true)
     setReverse((prev) => !prev)
   }
+
+  const navigate = useNavigate()
+
+  const gotohome = () => {
+    navigate('/home')
+  }
+
+  const gotoAbout = () => {
+    navigate('/about')
+  }
+
+  const gotoContact = () => {
+    navigate('/contact')
+  }
+
+  const gotoCats = () => {
+    navigate('/cats')
+  }
+
 
   const [animating, setAnimating] = useState(false)
   const [reverse, setReverse] = useState(false)
@@ -28,15 +47,15 @@ const NavbarComponent = () => {
             alt="logo"
           />
           {isMenu ?
-            <>
-              <ul className={isMenu ? "visible" : "hidden"}>
-                <li onClick={() => (<Navigate to='/home' />)}>Home</li>
-                <li onClick={() => (<Navigate to='/about' />)}>About</li>
-                <li onClick={() => (<Navigate to='/contact' />)}>Contact</li>
-                <li onClick={() => (<Navigate to='/cats' />)}>Cats</li>
-              </ul>
-              <label>Login</label>
-            </>
+            <div className='MenuControl'>
+              <div className='Menu'>
+                <button onClick={gotohome}>Home</button>
+                <button onClick={gotoAbout}>About</button>
+                <button onClick={gotoContact}>Contact</button>
+                <button onClick={gotoCats}>Cats</button>
+                <label>Login</label>
+              </div>
+            </div>
             : null
           }
         </div> :

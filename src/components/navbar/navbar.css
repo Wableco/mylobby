@@ -5,18 +5,29 @@ ul{
     width: 100vw;
 }
 
-ul> li{
-    list-style: none;
+button{
+    border: none;
+    background-color: transparent;
 }
 
 .NavBar{
-    display: flex;
     position: relative;
+}
+
+.MenuControl{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.Menu{
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100vw;
+    justify-content: space-around;
+    padding-left: 5%;
     background-color: aliceblue;
-    box-shadow: 0 0 0.5rem black
+    box-shadow: 0 0 0.5rem rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 /* Classe para aplicar a animação */
@@ -55,7 +66,8 @@ ul> li{
 
 @media (max-width: 768px){
     ul.visible{
-        display: flex
+        display: flex;
+        z-index: 2;
     }
     ul.hidden{
         background-color: transparent;
